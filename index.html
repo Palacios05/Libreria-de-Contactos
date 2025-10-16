@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Contactos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📇 Lista de Contactos</h1>
+
+    <div class="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Ingrese el nombre" />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" placeholder="Ingrese el teléfono" />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" placeholder="Ingrese el correo" />
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo">
+        <option value="">Seleccione...</option>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+      </select>
+
+      <label for="descripcion">Descripción (opcional):</label>
+      <textarea id="descripcion" rows="3" placeholder="Pequeña descripción"></textarea>
+
+      <button id="guardar">Agregar contacto</button>
+    </div>
+
+    <h2>Contactos guardados</h2>
+    <ul id="listaContactos"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

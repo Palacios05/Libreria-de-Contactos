@@ -1,0 +1,189 @@
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+  padding: 24px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #111827;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Hacer que select y textarea tengan el mismo estilo que los inputs */
+select#sexo,
+textarea#descripcion {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  outline: none;
+  font-size: 14px;
+}
+
+textarea#descripcion {
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  box-shadow: 0 0 0 4px rgba(30,64,175,0.06);
+  border-color: #2563eb;
+}
+
+/* Botón principal (Agregar / Actualizar) */
+button#guardar {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background-color: #2563eb; /* azul */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button#guardar:hover {
+  background-color: #1e40af;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tarjeta de contacto */
+li.contacto {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid #eef2f7;
+}
+
+li.contacto .datos {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Título numerado de cada tarjeta */
+.titulo-contacto {
+  font-weight: 700;
+  color: #0b1220;
+  background-color: #f1f5f9;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.encabezado-datos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sexo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #f1f5f9;
+  color: #0b1220;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.descripcion {
+  color: #374151;
+  font-size: 13px;
+  background-color: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+li.contacto .datos span {
+  color: #0b1220;
+  font-size: 14px;
+}
+
+.botones {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+
+/* Botón eliminar: rojo */
+button.eliminar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.eliminar:hover {
+  background-color: #b02a37;
+}
+
+/* Botón editar: naranja */
+button.editar {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.editar:hover {
+  background-color: #d97706;
+}
+
+/* Mensaje cuando no hay contactos */
+p.empty {
+  text-align: center;
+  color: #6b7280;
+  padding: 14px 8px;
+}
